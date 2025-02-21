@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - chao_hoi
+  - ask_booking
+  - cancel_booking
+  - check_booking_status
+  - ask_room_price
+  - ask_services
+
+responses:
+  utter_chao_hoi:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn hôm nay?"
+  utter_ask_booking:
+    - text: "Bạn muốn đặt phòng ở đâu và vào ngày nào? Tôi có thể giúp bạn tìm kiếm."
+  utter_cancel_booking:
+    - text: "Bạn vui lòng cung cấp mã đặt phòng để tôi kiểm tra quy trình hủy giúp bạn."
+  utter_check_booking_status:
+    - text: "Bạn vui lòng cung cấp mã đặt phòng, tôi sẽ kiểm tra trạng thái cho bạn."
+  utter_ask_room_price:
+    - text: "Giá phòng thay đổi tùy thuộc vào khách sạn và ngày bạn chọn. Bạn có thể cho tôi biết địa điểm và thời gian?"
+  utter_ask_services:
+    - text: "Khách sạn của chúng tôi có nhiều dịch vụ như spa, bể bơi, phòng gym và đưa đón sân bay. Bạn cần thông tin chi tiết về dịch vụ nào?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

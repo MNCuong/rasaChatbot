@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+  - rule: Chào hỏi
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+
+  - rule: Respond to booking request
+    steps:
+      - intent: ask_booking
+      - action: utter_ask_booking
+
+  - rule: Respond to cancel booking request
+    steps:
+      - intent: cancel_booking
+      - action: utter_cancel_booking
+
+  - rule: Respond to check booking status request
+    steps:
+      - intent: check_booking_status
+      - action: utter_check_booking_status
+
+  - rule: Respond to room price inquiry
+    steps:
+      - intent: ask_room_price
+      - action: utter_ask_room_price
+
+  - rule: Respond to service inquiry
+    steps:
+      - intent: ask_services
+      - action: utter_ask_services

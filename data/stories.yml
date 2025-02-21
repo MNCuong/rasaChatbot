@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+  - story: chao_hoi
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+
+  - story: user wants to book a room
+    steps:
+      - intent: ask_booking
+      - action: utter_ask_booking
+
+  - story: user wants to cancel a booking
+    steps:
+      - intent: cancel_booking
+      - action: utter_cancel_booking
+
+  - story: user checks booking status
+    steps:
+      - intent: check_booking_status
+      - action: utter_check_booking_status
+
+  - story: user asks for room price
+    steps:
+      - intent: ask_room_price
+      - action: utter_ask_room_price
+
+  - story: user asks about services
+    steps:
+      - intent: ask_services
+      - action: utter_ask_services

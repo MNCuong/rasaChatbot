@@ -1,0 +1,44 @@
+version: "3.1"
+
+nlu:
+  - intent: chao_hoi
+    examples:
+      - Xin chào
+      - Hello
+      - Hi
+      - Chào bạn
+      - Chào buổi sáng
+  - intent: ask_booking
+    examples:
+      - Tôi muốn đặt phòng khách sạn.
+      - Làm sao để đặt phòng?
+      - Đặt phòng khách sạn ở Hà Nội như thế nào?
+      - Tôi có thể đặt phòng không?
+
+  - intent: cancel_booking
+    examples:
+      - Tôi muốn hủy đặt phòng.
+      - Hủy đặt phòng có mất phí không?
+      - Làm sao để hủy đặt phòng?
+      - Tôi có thể hủy phòng đã đặt không?
+
+  - intent: check_booking_status
+    examples:
+      - Tôi muốn kiểm tra trạng thái đặt phòng.
+      - Đơn đặt phòng của tôi đã được xác nhận chưa?
+      - Làm sao để biết phòng đã đặt chưa?
+      - Tôi có thể kiểm tra đơn đặt phòng không?
+
+  - intent: ask_room_price
+    examples:
+      - Giá phòng khách sạn là bao nhiêu?
+      - Khách sạn A có giá bao nhiêu một đêm?
+      - Tôi muốn biết giá phòng ở Đà Nẵng.
+      - Giá phòng cao nhất là bao nhiêu?
+
+  - intent: ask_services
+    examples:
+      - Khách sạn có những dịch vụ gì?
+      - Tôi muốn biết về dịch vụ spa tại khách sạn.
+      - Có bữa sáng miễn phí không?
+      - Khách sạn có dịch vụ đưa đón sân bay không?
