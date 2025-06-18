@@ -1,44 +1,82 @@
-version: "3.1"
+version: "3.0"
 
 nlu:
-  - intent: chao_hoi
-    examples:
-      - Xin chào
-      - Hello
-      - Hi
-      - Chào bạn
-      - Chào buổi sáng
-  - intent: ask_booking
-    examples:
-      - Tôi muốn đặt phòng khách sạn.
-      - Làm sao để đặt phòng?
-      - Đặt phòng khách sạn ở Hà Nội như thế nào?
-      - Tôi có thể đặt phòng không?
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    - Hello
+    - Hi
+    - Chào bạn ơi
 
-  - intent: cancel_booking
-    examples:
-      - Tôi muốn hủy đặt phòng.
-      - Hủy đặt phòng có mất phí không?
-      - Làm sao để hủy đặt phòng?
-      - Tôi có thể hủy phòng đã đặt không?
+- intent: goodbye
+  examples: |
+    - Tạm biệt
+    - Bye
+    - Hẹn gặp lại
+    - Chào nhé
 
-  - intent: check_booking_status
-    examples:
-      - Tôi muốn kiểm tra trạng thái đặt phòng.
-      - Đơn đặt phòng của tôi đã được xác nhận chưa?
-      - Làm sao để biết phòng đã đặt chưa?
-      - Tôi có thể kiểm tra đơn đặt phòng không?
+- intent: ask_flight
+  examples: |
+    - Tôi muốn đặt vé máy bay từ Hà Nội đến Đà Nẵng
+    - Vé đi Sài Gòn hôm nay còn không?
+    - Có chuyến bay nào từ Hồ Chí Minh đến Phú Quốc ngày mai không?
+    - Giá vé máy bay đi Nha Trang bao nhiêu?
 
-  - intent: ask_room_price
-    examples:
-      - Giá phòng khách sạn là bao nhiêu?
-      - Khách sạn A có giá bao nhiêu một đêm?
-      - Tôi muốn biết giá phòng ở Đà Nẵng.
-      - Giá phòng cao nhất là bao nhiêu?
+- intent: ask_price
+  examples: |
+    - Vé đi Hà Nội bao nhiêu tiền?
+    - Giá vé khứ hồi là bao nhiêu?
+    - Vé máy bay đi Đà Lạt hôm nay có rẻ không?
 
-  - intent: ask_services
-    examples:
-      - Khách sạn có những dịch vụ gì?
-      - Tôi muốn biết về dịch vụ spa tại khách sạn.
-      - Có bữa sáng miễn phí không?
-      - Khách sạn có dịch vụ đưa đón sân bay không?
+- intent: ask_schedule
+  examples: |
+    - Lịch bay hôm nay như thế nào?
+    - Chuyến bay sớm nhất từ TP.HCM đi Hà Nội là mấy giờ?
+    - Tôi muốn biết giờ bay chuyến tới
+
+- intent: thanks
+  examples: |
+    - Cảm ơn bạn
+    - Cảm ơn nhiều
+    - Thanks
+    - Rất hữu ích
+
+- intent: fallback
+  examples: |
+    - [bất kỳ câu nào không nằm trong intent trên]
+
+- intent: guide_booking
+  examples: |
+    - Làm sao để đặt vé?
+    - Tôi muốn hướng dẫn đặt vé
+    - Hướng dẫn đặt vé máy bay cho tôi
+    - Cách thức đặt vé như thế nào?
+
+- intent: search_flight
+  examples: |
+    - Tìm chuyến bay từ Hà Nội đi Đà Nẵng vào ngày mai
+    - Có chuyến bay nào sáng mai không?
+    - Tìm vé rẻ nhất đi Sài Gòn
+    - Kiểm tra chuyến bay ngày 25/5
+
+- intent: payment_guide
+  examples: |
+    - Làm sao để thanh toán?
+    - Tôi muốn biết cách thanh toán
+    - Hình thức thanh toán có những gì?
+    - Thanh toán như thế nào?
+
+- intent: cancel_change_ticket
+  examples: |
+    - Tôi muốn hủy vé
+    - Cách đổi vé máy bay thế nào?
+    - Hủy vé có mất phí không?
+    - Làm sao để đổi chuyến bay?
+
+- intent: ask_service_info
+  examples: |
+    - Có dịch vụ đưa đón sân bay không?
+    - Tôi muốn hỏi về hành lý
+    - Quy định về hành lý là gì?
+    - Tôi cần biết thông tin về dịch vụ của bạn

@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_room_price_detail_hotel\"}}]": "utter_ask_specific_hotel",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_room_price_detail_hotel\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_specific_hotel\"}, \"user\": {\"intent\": \"ask_room_price_detail_hotel\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_services\"}}]": "utter_ask_services",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_services\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_services\"}, \"user\": {\"intent\": \"ask_services\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_travel_combo\"}}]": "utter_ask_travel_combo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_travel_combo\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_travel_combo\"}, \"user\": {\"intent\": \"ask_travel_combo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_room_price\"}}]": "utter_ask_room_price",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_room_price\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_room_price\"}, \"user\": {\"intent\": \"ask_room_price\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_booking\"}}]": "utter_ask_booking",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_booking\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_booking\"}, \"user\": {\"intent\": \"ask_booking\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_flight_ticket\"}}]": "utter_ask_flight_ticket",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_flight_ticket\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_flight_ticket\"}, \"user\": {\"intent\": \"ask_flight_ticket\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_booking\"}}]": "utter_cancel_booking",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cancel_booking\"}}, {\"prev_action\": {\"action_name\": \"utter_cancel_booking\"}, \"user\": {\"intent\": \"cancel_booking\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_car_rental\"}}]": "utter_ask_car_rental",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_car_rental\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_car_rental\"}, \"user\": {\"intent\": \"ask_car_rental\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"chao_hoi\"}}]": "utter_chao_hoi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"chao_hoi\"}}, {\"prev_action\": {\"action_name\": \"utter_chao_hoi\"}, \"user\": {\"intent\": \"chao_hoi\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_booking_status\"}}]": "utter_check_booking_status",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_booking_status\"}}, {\"prev_action\": {\"action_name\": \"utter_check_booking_status\"}, \"user\": {\"intent\": \"check_booking_status\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

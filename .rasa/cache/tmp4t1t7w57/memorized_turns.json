@@ -1,0 +1,19 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSMxPz4jP7O2NhYAPb0cqA==": "utter_chao_hoi",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSMxPz4jP7OWgDGlJSWpRfFw1XjMiQUAKz04AA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2flJ+fnZmXXlsbCwCWjh31": "utter_ask_booking",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2flJ+fnZmXXkvApNKSktSieGQN+E2LBQBIhDvn": "action_listen",
+    "eJwtisEJwCAMAFdxgE7gKqUE0UBDNZGY9iPu3kD7u+Nun2sLsys+kLKRcAzzA+DUMIZfKg1D9vceqP4Qu5rncYGKNOhKGaGgJapwimFd63gBrHgkiA==": "utter_ask_specific_hotel",
+    "eJyVjdENgCAQQ1dhACdgFWMuBGu8iECO0x/i7mLk3/jXpq/tWK/B1Cw4yXnlFK2pr6DodljTTeCiiI09CqQxHJvVFpeNJKWdsrAHzVDHgdakCNfH8qEKoWegZHhe2Pfev5PpBs3JS+U=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB0PFCnLTE4trq2NBQC1dh5w": "utter_ask_services",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB0PFCnLTE4triVgVGlJSWpRPIoOAubFAgALOT1Y": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOTEvOTUnPik/PzszL722NhYA8VofHA==": "utter_cancel_booking",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOTEvOTUnPik/PzszL72WgGGlJSWpRfFoegiaGQsAce4/XA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1flJ+fG19QlJmcWlsbCwDzSB87": "utter_ask_room_price",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1flJ+fG19QlJmcWkvAsNKSktSieDQ9BM2MBQCFxD+5": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTs+KT8/OzMvPb64JLGktLi2NhYAtNshtw==": "utter_check_booking_status",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohOSM1OTs+KT8/OzMvPb64JLGktLiWgJGlJSWpRfFYdRJpfiwAVOdHLQ==": "action_listen"
+  }
+}

@@ -1,27 +1,70 @@
-version: "3.1"
+version: "3.0"
 
 intents:
-  - chao_hoi
-  - ask_booking
-  - cancel_booking
-  - check_booking_status
-  - ask_room_price
-  - ask_services
+  - greet
+  - goodbye
+  - ask_flight
+  - ask_price
+  - ask_schedule
+  - thanks
+  - fallback
+  - guide_booking
+  - search_flight
+  - payment_guide
+  - cancel_change_ticket
+  - ask_service_info
 
 responses:
-  utter_chao_hoi:
-    - text: "Xin chào! Tôi có thể giúp gì cho bạn hôm nay?"
-  utter_ask_booking:
-    - text: "Bạn muốn đặt phòng ở đâu và vào ngày nào? Tôi có thể giúp bạn tìm kiếm."
-  utter_cancel_booking:
-    - text: "Bạn vui lòng cung cấp mã đặt phòng để tôi kiểm tra quy trình hủy giúp bạn."
-  utter_check_booking_status:
-    - text: "Bạn vui lòng cung cấp mã đặt phòng, tôi sẽ kiểm tra trạng thái cho bạn."
-  utter_ask_room_price:
-    - text: "Giá phòng thay đổi tùy thuộc vào khách sạn và ngày bạn chọn. Bạn có thể cho tôi biết địa điểm và thời gian?"
-  utter_ask_services:
-    - text: "Khách sạn của chúng tôi có nhiều dịch vụ như spa, bể bơi, phòng gym và đưa đón sân bay. Bạn cần thông tin chi tiết về dịch vụ nào?"
+  utter_greet:
+    - text: "Chào bạn! Tôi có thể giúp gì cho bạn trong việc đặt vé máy bay?"
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_goodbye:
+    - text: "Tạm biệt! Chúc bạn có chuyến đi vui vẻ."
+
+  utter_ask_flight:
+    - text: "Bạn muốn đặt vé máy bay từ đâu đến đâu? Ngày bay là khi nào?"
+
+  utter_ask_price:
+    - text: "Giá vé phụ thuộc vào thời điểm và hạng vé. Bạn có thể cho tôi biết cụ thể điểm đi và điểm đến không?"
+
+  utter_ask_schedule:
+    - text: "Bạn muốn xem lịch bay cho ngày nào và từ đâu đến đâu?"
+
+  utter_thanks:
+    - text: "Chúc bạn có một trải nghiệm tốt với chúng tôi!"
+
+  utter_fallback:
+    - text: "Xin lỗi, tôi không hiểu bạn muốn gì. Bạn có thể liên hệ trực tiếp qua trung tâm hỗ trợ khách hàng của chúng tôi http://localhost:5173/customer-support-chat"
+    - text: "Xin lỗi, tôi không hiểu bạn muốn gì. Bạn có thể nói lại được không?"
+
+  utter_guide_booking:
+    - text: |
+        Bạn có thể đặt vé máy bay theo các bước sau:
+        1. Chọn điểm đi và điểm đến.
+        2. Chọn ngày đi và ngày về (nếu có).
+        3. Chọn số lượng hành khách.
+        4. Chọn chuyến bay phù hợp.
+        5. Nhập thông tin hành khách.
+        6. Thanh toán qua các hình thức: thẻ tín dụng, ví điện tử, chuyển khoản.
+        Bạn cần tôi giúp gì thêm không?
+
+  utter_search_flight:
+    - text: "Bạn vui lòng cho biết điểm đi, điểm đến và ngày bay để tôi tìm chuyến bay phù hợp nhé."
+
+  utter_payment_guide:
+    - text: "Chúng tôi hỗ trợ các phương thức thanh toán: ZaloPay."
+
+  utter_cancel_change_ticket:
+    - text: |
+        Bạn có thể hủy hoặc đổi vé theo quy định sau:
+        - Hủy vé sẽ mất phí tùy theo hạng vé và thời gian hủy.
+        - Đổi vé vui lòng liên hệ tổng đài hoặc qua website.
+        Bạn muốn tôi hướng dẫn chi tiết?
+
+  utter_ask_service_info:
+    - text: |
+        Dịch vụ của chúng tôi bao gồm:
+        - Hành lý xách tay và ký gửi theo quy định hãng.
+        - Dịch vụ đưa đón sân bay (có phí).
+        - Hỗ trợ đặt phòng khách sạn và thuê xe.
+        Bạn cần biết thêm thông tin nào không?

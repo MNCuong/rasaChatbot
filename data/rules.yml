@@ -1,32 +1,62 @@
-version: "3.1"
+version: "3.0"
 
 rules:
-  - rule: Chào hỏi
-    steps:
-      - intent: chao_hoi
-      - action: utter_chao_hoi
+- rule: Greet
+  steps:
+  - intent: greet
+  - action: utter_greet
 
-  - rule: Respond to booking request
-    steps:
-      - intent: ask_booking
-      - action: utter_ask_booking
+- rule: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
 
-  - rule: Respond to cancel booking request
-    steps:
-      - intent: cancel_booking
-      - action: utter_cancel_booking
+- rule: Ask flight info
+  steps:
+  - intent: ask_flight
+  - action: utter_ask_flight
 
-  - rule: Respond to check booking status request
-    steps:
-      - intent: check_booking_status
-      - action: utter_check_booking_status
+- rule: Ask price
+  steps:
+  - intent: ask_price
+  - action: utter_ask_price
 
-  - rule: Respond to room price inquiry
-    steps:
-      - intent: ask_room_price
-      - action: utter_ask_room_price
+- rule: Ask schedule
+  steps:
+  - intent: ask_schedule
+  - action: utter_ask_schedule
 
-  - rule: Respond to service inquiry
-    steps:
-      - intent: ask_services
-      - action: utter_ask_services
+- rule: Thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Guide booking
+  steps:
+  - intent: guide_booking
+  - action: utter_guide_booking
+
+- rule: Search flight
+  steps:
+  - intent: search_flight
+  - action: utter_search_flight
+
+- rule: Payment guide
+  steps:
+  - intent: payment_guide
+  - action: utter_payment_guide
+
+- rule: Cancel or change ticket
+  steps:
+  - intent: cancel_change_ticket
+  - action: utter_cancel_change_ticket
+
+- rule: Ask service info
+  steps:
+  - intent: ask_service_info
+  - action: utter_ask_service_info
+
+- rule: Fallback response
+  steps:
+  - intent: fallback
+  - action: utter_fallback

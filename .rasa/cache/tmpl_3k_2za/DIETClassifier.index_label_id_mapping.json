@@ -1,0 +1,8 @@
+{
+  "0": "ask_booking",
+  "1": "ask_room_price",
+  "2": "ask_services",
+  "3": "cancel_booking",
+  "4": "chao_hoi",
+  "5": "check_booking_status"
+}

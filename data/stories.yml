@@ -1,32 +1,41 @@
-version: "3.1"
+version: "3.0"
 
 stories:
-  - story: chao_hoi
-    steps:
-      - intent: chao_hoi
-      - action: utter_chao_hoi
+- story: greet and ask flight
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_flight
+  - action: utter_ask_flight
 
-  - story: user wants to book a room
-    steps:
-      - intent: ask_booking
-      - action: utter_ask_booking
+- story: guide booking and thanks
+  steps:
+  - intent: guide_booking
+  - action: utter_guide_booking
+  - intent: thanks
+  - action: utter_thanks
 
-  - story: user wants to cancel a booking
-    steps:
-      - intent: cancel_booking
-      - action: utter_cancel_booking
+- story: payment guide flow
+  steps:
+  - intent: payment_guide
+  - action: utter_payment_guide
 
-  - story: user checks booking status
-    steps:
-      - intent: check_booking_status
-      - action: utter_check_booking_status
+- story: cancel or change ticket
+  steps:
+  - intent: cancel_change_ticket
+  - action: utter_cancel_change_ticket
 
-  - story: user asks for room price
-    steps:
-      - intent: ask_room_price
-      - action: utter_ask_room_price
+- story: ask service info
+  steps:
+  - intent: ask_service_info
+  - action: utter_ask_service_info
 
-  - story: user asks about services
-    steps:
-      - intent: ask_services
-      - action: utter_ask_services
+- story: fallback scenario
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

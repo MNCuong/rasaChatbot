@@ -1,0 +1,12 @@
+{
+  "0": "ask_booking",
+  "1": "ask_car_rental",
+  "2": "ask_flight_ticket",
+  "3": "ask_room_price",
+  "4": "ask_room_price_detail_hotel",
+  "5": "ask_services",
+  "6": "ask_travel_combo",
+  "7": "cancel_booking",
+  "8": "chao_hoi",
+  "9": "check_booking_status"
+}
